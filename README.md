@@ -25,12 +25,12 @@ Do You want to test With Local Host [y/n] : Y  (Y to test In Local Host)
 Enter Port Number For [This PEER]: 7890		   (Enter This Peer Port Number, For Local Host Only)
 
 (Option Menu Will Popup, Option 1 not Supported Now )
------------------------------------------
-| 1. Request for download File from Peer |
-| 2. Transfer File                       |
-| 3. Connect/Discover Peer in Network    |
------------------------------------------
-| Enter: 
+	-----------------------------------------
+	| 1. Request for download File from Peer |
+	| 2. Transfer File                       |
+	| 3. Connect/Discover Peer in Network    |
+	-----------------------------------------
+	| Enter: 
 
 ## STEP To Connect With Peer
 
@@ -38,24 +38,24 @@ First Connect with Peer : Enter 3, It will ask you to enter Peer IP Address (If 
 Enter Peer Port Number : 3890   (For Local Host, For Other It will ask you to enter IP address with (.)dot)
 
 After this You will be Redirected to Main Menu
------------------------------------------
-| 1. Request for download File from Peer |
-| 2. Transfer File                       |
-| 3. Connect/Discover Peer in Network    |
------------------------------------------
-| Enter: 
+	-----------------------------------------
+	| 1. Request for download File from Peer |
+	| 2. Transfer File                       |
+	| 3. Connect/Discover Peer in Network    |
+	-----------------------------------------
+	| Enter: 
 
 ## STEP To Transfer File
 Now Enter 2 for Transfer file, It will ask you to enter file name you want to transfer
 Enter File Name (25 letters): test.txt 
 Number of Byte(s) 33
 
------------------------------------------
-| 1. Request for download File from Peer |
-| 2. Transfer File                       |
-| 3. Connect/Discover Peer in Network    |
------------------------------------------
-| Enter: 2
+	-----------------------------------------
+	| 1. Request for download File from Peer |
+	| 2. Transfer File                       |
+	| 3. Connect/Discover Peer in Network    |
+	-----------------------------------------
+	| Enter: 2
 
 Enter File Name (25 letters): show_discovery.png
 Number of Byte(s) 174093
