@@ -95,9 +95,9 @@ Peer File Transfer Starting on default port (7890)
 Creating On Interface
 
 	Adding multicast group 			[OK]
-	Setting the local interface 	[OK]
+	Setting the local interface 		[OK]
 	Disabling the loopback 			[OK]
-	Starting Neighbour Discovery 	[OK]
+	Starting Neighbour Discovery 		[OK]
 
 When Application starts, it will sends Discovery packet of len 28bytes
 
