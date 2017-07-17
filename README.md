@@ -1,36 +1,43 @@
 # Peer To Peer File Transfer
 
-Transfer file to any peer in same Network
+Transfer file to any peer (Same Network)
 
 ## Installation
 
 make
 	
-	>exe directory will be created
+	exe directory will be created
 
 ## Uninstallation
 
-make clean
+    make clean
 
 	
 ## Usage
 
-./exe/peer
+    ./exe/peer
 
--> For Local Host
-It will ask you if you want run run peers on localhost
+**For Local Host
+It will ask you if you want run run peers on localhost**
 
-Enter Peer Number[0-255]: 0
-Do You want to test With Local Host [y/n] : Y  (Y to test In Local Host)
-Enter Port Number For [This PEER]: 7890		   (Enter This Peer Port Number, For Local Host Only)
+	Enter Peer Number[0-255]: 0
+    
+**Y to test In Local Host**
+
+	Do You want to test With Local Host [y/n] : Y
+    
+**Enter This Peer Port Number, For Local Host Only**
+
+	Enter Port Number For [This PEER]: 7890
 
 (Option Menu Will Popup, Option 1 not Supported Now )
-		-----------------------------------------
-		| 1. Request for download File from Peer |
-		| 2. Transfer File                       |
-		| 3. Connect/Discover Peer in Network    |
-		-----------------------------------------
-		| Enter: 
+	
+	-----------------------------------------
+	| 1. Request for download File from Peer |
+	| 2. Transfer File                       |
+	| 3. Connect/Discover Peer in Network    |
+	-----------------------------------------
+	| Enter: 
 
 ## STEP To Connect With Peer
 
@@ -38,6 +45,7 @@ First Connect with Peer : Enter 3, It will ask you to enter Peer IP Address (If 
 Enter Peer Port Number : 3890   (For Local Host, For Other It will ask you to enter IP address with (.)dot)
 
 After this You will be Redirected to Main Menu
+
 	-----------------------------------------
 	| 1. Request for download File from Peer |
 	| 2. Transfer File                       |
@@ -47,8 +55,9 @@ After this You will be Redirected to Main Menu
 
 ## STEP To Transfer File
 Now Enter 2 for Transfer file, It will ask you to enter file name you want to transfer
-Enter File Name (25 letters): test.txt 
-Number of Byte(s) 33
+
+	Enter File Name (25 letters): test.txt 
+	Number of Byte(s) 33
 
 	-----------------------------------------
 	| 1. Request for download File from Peer |
@@ -57,19 +66,20 @@ Number of Byte(s) 33
 	-----------------------------------------
 	| Enter: 2
 
-Enter File Name (25 letters): show_discovery.png
-Number of Byte(s) 174093
+	Enter File Name (25 letters): show_discovery.png
+	Number of Byte(s) 174093
 
-Block(s) Transferred:341/341
+	Block(s) Transferred:341/341
 
 
-Other Peer :- 
-New file request from Peer [show_discovery.png]
-Block(s) Remaining: 00000001/341
-CheckSum Calculated :56e024503bdd004d7c81ead4cf711f4e
-CheckSum Received   :56e024503bdd004d7c81ead4cf711f4e
-Block(s) Remaining: 00000000/341
-File Download Success [show_discovery.png]
+**On other peer output window**
+
+	New file request from Peer [show_discovery.png]
+	Block(s) Remaining: 00000001/341
+	CheckSum Calculated :56e024503bdd004d7c81ead4cf711f4e
+	CheckSum Received   :56e024503bdd004d7c81ead4cf711f4e
+	Block(s) Remaining: 00000000/341
+	File Download Success [show_discovery.png]
 
 
 
@@ -84,16 +94,30 @@ Do You want to test With Local Host [y/n] : n
 Peer File Transfer Starting on default port (7890)
 Creating On Interface
 
-Adding multicast group 			[OK]
-Setting the local interface 	[OK]
-Disabling the loopback 			[OK]
-Starting Neighbour Discovery 	[OK]
-Discover Packet len = [28]			<------- When Application starts, it will sends Discovery packet 
-Sending Discover message 		[OK]         and other node will update thier IP table and response back to this peer
+	Adding multicast group 			[OK]
+	Setting the local interface 	[OK]
+	Disabling the loopback 			[OK]
+	Starting Neighbour Discovery 	[OK]
 
-DISCOVERY REQUEST From Peer[1]			<----- Discovery Packet from Other Peer
-Neighbour Added IP:[192.168.0.109] To IP Table <---- Update IP Table
-Sending Discover message 		[OK]		   <---- Send Discovery Packet response 
+When Application starts, it will sends Discovery packet of len 28bytes
+
+	Discover Packet len = [28]
+    
+And other node will update thier IP table and response back to this peer <br />
+     
+	Sending Discover message 		[OK]
+    
+Discovery Packet from Other Peer <br />
+
+	DISCOVERY REQUEST From Peer[1]			
+    
+Update IP Table <br />
+    
+	Neighbour Added IP:`[192.168.0.109]` To IP Table
+ Send Discovery Packet response  <br />
+ 
+	Sending Discover message 		[OK]
+<br />
 
 	-----------------------------------------
 	| 1. Request for download File from Peer |
@@ -127,18 +151,19 @@ Set Peer Info (Enter Node ID):1  <--------------< Enter Node No You Want to Send
 	-----------------------------------------
 	| Enter: 2
 
-Enter File Name (25 letters): show_discovery.png
-Number of Byte(s) 174093
+	Enter File Name (25 letters): show_discovery.png
+	Number of Byte(s) 174093
 
-Block(s) Transferred:341/341
+	Block(s) Transferred:341/341
 
-Other Peer :- 
-New file request from Peer [show_discovery.png]
-Block(s) Remaining: 00000001/341
-CheckSum Calculated :56e024503bdd004d7c81ead4cf711f4e
-CheckSum Received   :56e024503bdd004d7c81ead4cf711f4e
-Block(s) Remaining: 00000000/341
-File Download Success [show_discovery.png]
+**On other peer output window**
+
+	New file request from Peer [show_discovery.png]
+	Block(s) Remaining: 00000001/341
+	CheckSum Calculated :56e024503bdd004d7c81ead4cf711f4e
+	CheckSum Received   :56e024503bdd004d7c81ead4cf711f4e
+	Block(s) Remaining: 00000000/341
+	File Download Success [show_discovery.png]
 
 
 ## NOTE
@@ -150,7 +175,7 @@ SCREENSHOT IN screenshot folder
 
 
 
-Ref:-
-https://tools.ietf.org/html/rfc1350 
-http://www.tldp.org/HOWTO/Multicast-HOWTO-6.html
+Ref:- <br />
+https://tools.ietf.org/html/rfc1350  <br />
+http://www.tldp.org/HOWTO/Multicast-HOWTO-6.html  <br />
 https://austinmarton.wordpress.com/2011/09/14/sending-raw-ethernet-packets-from-a-specific-interface-in-c-on-linux/
