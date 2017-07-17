@@ -25,12 +25,12 @@ Do You want to test With Local Host [y/n] : Y  (Y to test In Local Host)
 Enter Port Number For [This PEER]: 7890		   (Enter This Peer Port Number, For Local Host Only)
 
 (Option Menu Will Popup, Option 1 not Supported Now )
-	-----------------------------------------
-	| 1. Request for download File from Peer |
-	| 2. Transfer File                       |
-	| 3. Connect/Discover Peer in Network    |
-	-----------------------------------------
-	| Enter: 
+		-----------------------------------------
+		| 1. Request for download File from Peer |
+		| 2. Transfer File                       |
+		| 3. Connect/Discover Peer in Network    |
+		-----------------------------------------
+		| Enter: 
 
 ## STEP To Connect With Peer
 
@@ -95,37 +95,37 @@ DISCOVERY REQUEST From Peer[1]			<----- Discovery Packet from Other Peer
 Neighbour Added IP:[192.168.0.109] To IP Table <---- Update IP Table
 Sending Discover message 		[OK]		   <---- Send Discovery Packet response 
 
------------------------------------------
-| 1. Request for download File from Peer |
-| 2. Transfer File                       |
-| 3. Connect/Discover Peer in Network    |
------------------------------------------
-| Enter: 3 (Show Discovered IP)
+	-----------------------------------------
+	| 1. Request for download File from Peer |
+	| 2. Transfer File                       |
+	| 3. Connect/Discover Peer in Network    |
+	-----------------------------------------
+	| Enter: 3 (Show Discovered IP)
 
-| 1. Enter IP Manually       |
-| 2. Show Discovered IP list |
-     Enter: 2
+	| 1. Enter IP Manually       |
+	| 2. Show Discovered IP list |
+	     Enter: 2
 
-------------------------------
-|NODE No |    IP ADDRESS     | 
-|   1    |    192.168.0.109  | <---\__IP Table__| It will update whenever
-|   2    |    192.168.0.111  | <---/            | you peer will connect in network
-------------------------------
+	------------------------------
+	|NODE No |    IP ADDRESS     | 
+	|   1    |    192.168.0.109  | <---\__IP Table__| It will update whenever
+	|   2    |    192.168.0.111  | <---/            | you peer will connect in network
+	------------------------------
 Set Peer Info (Enter Node ID):1  <--------------< Enter Node No You Want to Send File 
 
------------------------------------------
-| 1. Request for download File from Peer |
-| 2. Transfer File                       |
-| 3. Connect/Discover Peer in Network    |
------------------------------------------
-| Enter: 2						<--------------< Transfer File
+	-----------------------------------------
+	| 1. Request for download File from Peer |
+	| 2. Transfer File                       |
+	| 3. Connect/Discover Peer in Network    |
+	-----------------------------------------
+	| Enter: 2						<--------------< Transfer File
 
------------------------------------------
-| 1. Request for download File from Peer |
-| 2. Transfer File                       |
-| 3. Connect/Discover Peer in Network    |
------------------------------------------
-| Enter: 2
+	-----------------------------------------
+	| 1. Request for download File from Peer |
+	| 2. Transfer File                       |
+	| 3. Connect/Discover Peer in Network    |
+	-----------------------------------------
+	| Enter: 2
 
 Enter File Name (25 letters): show_discovery.png
 Number of Byte(s) 174093
