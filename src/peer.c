@@ -24,6 +24,7 @@
 #include "header.h"
 #include "common.h"
 #include "peer.h"
+#include "discovery.h"
 
 /* Static declaration */
 static struct sockaddr_in  	g_addr_me;
@@ -683,6 +684,10 @@ init_peer_network(uint8_t node_no, int port)
 	
 	/* Creat UDP Socket */
 	create_udp_socket(port);
+	
+	/* Start Neighbour Discovery */
+	INFO("Starting Neighbour Discovery \t\t[\x1B[32mOK\x1B[37m]\n");
+	start_neighbour_discovery(g_udpSocket, node_no);
 	
 	/* create threads for listner from other peers */    
     ret = pthread_create(&recv_thread, NULL, (void *) &peer_recv_thread, NULL);

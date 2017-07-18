@@ -21,6 +21,7 @@
 #include "header.h"
 #include "common.h"
 #include "peer.h"
+#include "discovery.h"
 
 
 /* Extern variable */
@@ -135,6 +136,8 @@ main(){
 					printf("Set Peer Indo (Enter Node ID)");
 					fflush(stdin);
 					scanf(" %d", &a);
+					ip = get_neighbour_ip(a);
+					connect_to_peer(ip, 0);
 				}
 			}
 			else {
