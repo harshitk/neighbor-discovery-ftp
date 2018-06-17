@@ -1,6 +1,6 @@
 /*
  *------------------------------------------------------------------------
- * main.c - Main CLI Interface, starts all network module and discovery 
+ * main.c - Main CLI Interface, starts all network module and discovery
  *			protocol
  *
  * July 2017, harshit kachhwaha
@@ -32,7 +32,7 @@ FILE	*g_readfp;
 
 /**
  * INThandler:  Handles ctrl + C Interrupt and safe exit.
- * @param	int sig		- Socket fd 
+ * @param	int sig		- Socket fd
  * @return	void
  */
 void  INThandler(int sig)
@@ -44,29 +44,29 @@ void  INThandler(int sig)
 	exit(0);
 }
 
-int 
+int
 main(){
 
 	char      file_name[25] = "sample.text";
 	uint16_t  port = 0;
 	int8_t    ch;
 	uint8_t   peer_ip[15];
-	uint8_t   localhost = 0;	
-	int32_t   node_no = 0;	
+	uint8_t   localhost = 0;
+	int32_t   node_no = 0;
 	int c;
-	
+
 	/* Register SIGINT for ctrl+c for Safe Exit */
 	signal(SIGINT, INThandler);
-	
+
 	printf("\nEnter Peer Number[0-255]: ");
 	fflush(stdin);
 	scanf(" %d", &node_no);
-	
+
 	printf("\nDo You want to test With Local Host [y/n] :");
 	fflush(stdin);
 	scanf(" %c", &ch);
 	if (ch == 'y' || ch == 'Y') {
-		
+
 		printf("Enter Port Number [For This PEER]:");
 		fflush(stdin);
 		scanf(" %hu", &port);
@@ -78,7 +78,7 @@ main(){
 
 	/* Init Peer Network */
 	init_peer_network(node_no, port);
-	
+
 	while(1){
 		int a = 0;
 		while((c = getchar()) != '\n' && c != EOF);
@@ -90,15 +90,15 @@ main(){
 		printf("-----------------------------------------\n");
 		printf("| Enter: ");
 		scanf(" %d", &a);
-		
+
 		if (a == 2) {
 			printf("\nEnter File Name (25 letters): ");
 			while((c = getchar()) != '\n' && c != EOF);
 			scanf("%s", file_name);
-			
+
 			g_readfp = fopen(file_name, "r");
 			if (g_readfp != NULL) {
-				
+
 				if (g_peerConn) {
 					transfer_file_to_peer(g_readfp, file_name);
 				} else {
@@ -107,7 +107,7 @@ main(){
 			} else {
 				INFO("File Open Failed \n");
 			}
-			
+
 		} else if ( a == 3 ) {
 			if (!localhost) {
 				printf("| 1. Enter IP Manually       |\n");
@@ -147,7 +147,7 @@ main(){
 				scanf(" %hu", &peer_port);
 				connect_to_peer(NULL, peer_port);
 			}
-			
+
 		}else {
 			while((c = getchar()) != '\n' && c != EOF);
 			getchar();
