@@ -2,7 +2,7 @@ sudo: required
 before_install:
   - sudo apt-get install libao-dev
   - sudo apt-get install libcurl4-openssl-dev
-	#- chmod +x installMPG123.sh
+  #- chmod +x installMPG123.sh
   - sudo apt-get install libssl-dev
   
 # Enable C++ support
@@ -28,7 +28,7 @@ install:
 
 # Build steps
 script:
-	#- mkdir build
-	#- cd build
-	#- ${DEPS_DIR}/cmake/bin/cmake .. && make
-	- make
+#- mkdir build
+#- cd build
+#- ${DEPS_DIR}/cmake/bin/cmake .. && make
+    - make
