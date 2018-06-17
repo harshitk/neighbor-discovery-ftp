@@ -1,4 +1,7 @@
-# Peer To Peer File Transfer
+#Neighbor Discovery [mdns] / P2P File Transfer
+[![Build Status](https://travis-ci.org/harshitk/neighbor-discovery-ftp.svg?branch=master)](https://travis-ci.org/harshitk/neighbor-discovery-ftp)
+
+## Peer To Peer File Transfer
 
 Transfer file to any peer (Same Network)
 
