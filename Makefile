@@ -1,6 +1,6 @@
 CC = gcc
 MD = mkdir
-CFLAGS = -g -std=c99
+CFLAGS = -g -std=c99 -D_GNU_SOURCE
 LDLIBS = -lpthread -lssl -lcrypto
 SRCDIR = src
 OBJDIR = obj
